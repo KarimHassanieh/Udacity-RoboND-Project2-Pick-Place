@@ -28,12 +28,12 @@
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
 
-You're reading it!
+This write up has been provided.
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
 
-Here is an example of how to include an image in your writeup.
+The forward kinematics demo was run and used to evauluate the joint parameter. The below image shows the assignment of the kinematic frames and there distribution. This was the basis of the evaluation and derivation of the DH Parameters.
 
 ![alt text][image1]
 
