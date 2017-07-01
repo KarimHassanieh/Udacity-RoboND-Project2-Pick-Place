@@ -17,7 +17,7 @@
 [//]: # (Image References)
 
 [image1]: ./Results/kuka_arm_frame.png
-[image2]: ./Results/misc2.png
+[image2]: ./Results/demo.png
 [image3]: ./Results/misc3.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
@@ -33,7 +33,10 @@ This write up has been provided.
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
 
-The forward kinematics demo was run and used to evauluate the joint parameter. The below image shows the assignment of the kinematic frames and there distribution. This was the basis of the evaluation and derivation of the DH Parameters.
+The forward kinematics demo was run and used to evauluate the joint parameter. Below image shows demo succefully running in ROS
+![alt text][image2]
+
+Moreover this was the basis of evaluating the kinematic frames and there distribution. The below image shows how the frames were distributed
 
 ![alt text][image1]
 
