@@ -96,11 +96,11 @@ With these values we can obtain Theta 3
 - For Theta 4,Theta 5 , Theta 6 
 R 0_3 is evaluated based on the values obtained above. Then R3_6 is obtained by using the following formula (R3_6=inv(R0_3)*R roll pitch yaw.Then we could obtain Theta 4,5,6 by using the following formulas :
 
-beta = atan2(-r31,sqrt(r11*r11+r21*r21))*180/np.pi # rotation about Z-axis
+Theta5 = atan2(-r31,sqrt(r11*r11+r21*r21))
 
-alpha  = atan2(r21,r11)*180/np.pi # rotation about Y-axis
+Theta4  = atan2(r21,r11)
 
-gamma = atan2(r32,r33)*180/np.pi # rotation about X-axis
+Theta6 = atan2(r32,r33)
 
 In our code the function euler form matrix (From Tf.transformations was used as the results proved to be more accurate)
 
