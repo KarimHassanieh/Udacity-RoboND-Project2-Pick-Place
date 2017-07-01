@@ -44,11 +44,13 @@ Moreover this was the basis of evaluating the kinematic frames and there distrib
 
 link | alpha j-1 | a i-1 | d i-1 | Theta i
 --- | --- | --- | --- | ---
-1 | `highlight` | **bold** | 7.41 |---
-2 | a | b | c| ---
-3 | *italic* | text | 403 | ---
-4 | 2 | 3 | abcd | ---
-
+1 | 0 | 0 | 0.75 | Theta 1
+2 | -pi | 0.35 | 0| Theta 2
+3 | 0 | 1.25 | 0 | Theta 3
+4 | -pi | -0.054 | 1.5 | Theta 4 
+5 | pi | 3 | 0 | Theta 5
+6 | -pi| 3 | 0 | Theta 6
+7 | 0 | 3 | 0.303 | 0
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
 And here's another image! 
