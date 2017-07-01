@@ -75,7 +75,8 @@ Wrist position is projected on x-y axis similair to the image below . Theta 1 is
 
 ![alt text][image4]
 
-Moving on we have to realize there are several possible configurations and acceptable mathematical & trigometric solutions  as presented below based on the values chosen. For our purpose position -A (Front and above position ) is the most acceptable solution for our given workspace.
+Moving on we have to realize there are several possible configurations and acceptable mathematical & trigometric solutions  as presented below based on the values chosen. For our purpose position -A (Front and above position ) is the most acceptable solution for our given workspace ( **Refernce for below images : MODELLING A 6-DOF MANIPULATOR
+USING MATLAB SOFTWARE.,ARCHIVES OF MECHANICAL TECHNOLOGY AND AUTOMATION,Vol. 34 no. 3,2014 by PIOTROWSKI et al**)
 
 ![alt text][image5]
 
