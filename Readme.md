@@ -53,6 +53,8 @@ link | alpha j-1 | a i-1 | d i-1 | Theta i
 7 | 0 | 3 | 0.303 | 0
 
 The homogenous transformation was then calculated by inserting the below formula (refernced from Part 13 of the Udacity -Pick and Place Project section) to have transfomation from i-1 to i , in order to obtain the overall transform between the base_link and gripper_link the consecutive transformation matrices were multiplied (T base to gripper = Tbase to 1 * T 1 to 2 * T 2 to 3 * T3 to 4 * T5 to 6 * T 6 to gripper)
+
+
 ![alt text][image3]
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
