@@ -21,7 +21,7 @@
 [image3]: ./Results/matrix.png
 [image4]: ./Results/q1.png
 [image5]: ./Results/full_solutions.png
-[image6]: ./Results/front_above_positions.png
+[image6]: ./Results/front_above_position.png
 [image7]: ./Results/can_in_bin.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
