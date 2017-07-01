@@ -22,7 +22,7 @@
 [image4]: ./Results/q1.png
 [image5]: ./Results/full_solutions.png
 [image6]: ./Results/front_above_positions.png
-
+[image7]: ./Results/can_in_bin.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -65,8 +65,9 @@ The homogenous transformation was then calculated by inserting the below formula
 
 And here's another image! 
 
-![alt text][image2]
-
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
 ### Project Implementation
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
@@ -76,6 +77,6 @@ Here I'll talk about the code, what techniques I used, what worked and why, wher
 
 
 And just for fun, another example image:
-![alt text][image3]
+![alt text][image7]
 
 
