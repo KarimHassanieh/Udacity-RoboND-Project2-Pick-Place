@@ -1,5 +1,5 @@
 ## Project: Kinematics Pick & Place
-
+### Readme : This file is meant to guide the reviewer along the steps and methods taken to accomplish the project in hope of clarifying to the reviewer the steps taken with clarity.
 ---
 
 
