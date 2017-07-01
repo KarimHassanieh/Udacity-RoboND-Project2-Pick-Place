@@ -84,23 +84,32 @@ Two angles (alpha and beta )  are needed to calculate Theta 2 as shown in the be
 Alpha  is calculated based on atan2(hz,hxy) where hz=wc_Z-a1 & hxy=r-a1
 Beta is calculated by first calculating all the lengths of triangle by links 2-3-4 (A - B - C in image),(d3_4=d3^2+a3^2 and g=hx^2+hz^2) with the cosine rule (beta = acos((g^2+a2^2-d3_4^2)/(2*g*a2))
 With these values we can obtain Theta 2
+
 - For Theta 3 :
 Two angles (sigma and gamma )  are needed to calculate Theta 2 as shown in the below image
 Sigmma is calculated by using the lengths of triangle by links 2-3-4 (A - B - C in image) and applying cosine law (sigma= acos((a2*a2+d3_4*d3_4-g*g)/(2*d3_4*a2)) )
 Gamma is calculated by atan2(d4,a3)
 With these values we can obtain Theta 3 
+
 ![alt text][image6]
 
+- For Theta 4,Theta 5 , Theta 6 
+R 0_3 is evaluated based on the values obtained above. Then R3_6 is obtained by using the following formula (R3_6=inv(R0_3)*R roll pitch yaw
+
+Then we could obtain Theta 4,5,6 by using the following formulas :
+beta = atan2(-r31,sqrt(r11*r11+r21*r21))*180/np.pi # rotation about Z-axis
+alpha  = atan2(r21,r11)*180/np.pi # rotation about Y-axis
+gamma = atan2(r32,r33)*180/np.pi # rotation about X-axis
+
+In our code the function euler form matrix (From Tf.transformations was used as the results proved to be more accurate)
 
 ### Project Implementation
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
 
+The above kinematic analysis was implemented in the IK_server.py code. The below image shows the succeful placing of a can in the bin.
+Future work would include improving the inverse kinematic accuracy and automatically calculating the optimized configuration which requires least movement based on the above 4 possible configuration presented above.
 
-Here I'll talk about the code, what techniques I used, what worked and why, where the implementation might fail and how I might improve it if I were going to pursue this project further.  
-
-
-And just for fun, another example image:
 ![alt text][image7]
 
 
