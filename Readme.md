@@ -72,8 +72,16 @@ The wrist center will be calculated using roll , pitch , yaw values obtained. Us
 In order to calculate thetas : 
 - For Theta 1 :
 Wrist position is projected on x-y axis similair to the image below . Theta 1 is then calculated using atan2(Wc projection on y axis, Wc projection on x axis ) 
+
 ![alt text][image4]
+
+Moving on we have to realize there are several possible configurations and acceptable mathematical & trigometric solutions  as presented below based on the values chosen. For our purpose position -A (Front and above position ) is the most acceptable solution for our given workspace.
+
 ![alt text][image5]
+
+- For Theta 3 :
+Wrist position is projected on x-y axis similair to the image below . Theta 1 is then calculated using atan2(Wc projection on y axis, Wc projection on x axis ) 
+
 ![alt text][image6]
 
 
