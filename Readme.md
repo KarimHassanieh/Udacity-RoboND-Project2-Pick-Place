@@ -16,7 +16,7 @@
 
 [//]: # (Image References)
 
-[image1]: ./Results/Kuka_arm_frame.jpg
+[image1]: ./Results/kuka_arm_frame.png
 [image2]: ./Results/misc2.png
 [image3]: ./Results/misc3.png
 
