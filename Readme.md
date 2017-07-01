@@ -79,9 +79,16 @@ Moving on we have to realize there are several possible configurations and accep
 
 ![alt text][image5]
 
+- For Theta 2 :
+Two angles (alpha and beta )  are needed to calculate Theta 2 as shown in the below image
+Alpha  is calculated based on atan2(hz,hxy) where hz=wc_Z-a1 & hxy=r-a1
+Beta is calculated by first calculating all the lengths of triangle by links 2-3-4 (A - B - C in image),(d3_4=d3^2+a3^2 and g=hx^2+hz^2) with the cosine rule (beta = acos((g^2+a2^2-d3_4^2)/(2*g*a2))
+With these values we can obtain Theta 2
 - For Theta 3 :
-Wrist position is projected on x-y axis similair to the image below . Theta 1 is then calculated using atan2(Wc projection on y axis, Wc projection on x axis ) 
-
+Two angles (sigma and gamma )  are needed to calculate Theta 2 as shown in the below image
+Sigmma is calculated by using the lengths of triangle by links 2-3-4 (A - B - C in image) and applying cosine law (sigma= acos((a2*a2+d3_4*d3_4-g*g)/(2*d3_4*a2)) )
+Gamma is calculated by atan2(d4,a3)
+With these values we can obtain Theta 3 
 ![alt text][image6]
 
 
