@@ -56,18 +56,25 @@ link | alpha j-1 | a i-1 | d i-1 | Theta i
 6 | -pi| 3 | 0 | Theta 6
 7 | 0 | 3 | 0.303 | 0
 
-The homogenous transformation was then calculated by inserting the below formula (refernced from Part 13 of the Udacity -Pick and Place Project section) to have transfomation from i-1 to i , in order to obtain the overall transform between the base_link and gripper_link the consecutive transformation matrices were multiplied (T base to gripper = Tbase to 1 * T 1 to 2 * T 2 to 3 * T3 to 4 * T5 to 6 * T 6 to gripper)
+The homogenous transformation was then calculated by inserting the below formula (refernced from Part 13 of the Udacity -Pick and Place Project section) to have transfomation from i-1 to i , in order to obtain the overall transform between the base_link and gripper_link the consecutive transformation matrices were multiplied (T base to gripper = Tbase to 1 * T 1 to 2 * T 2 to 3 * T3 to 4 * T5 to 6 * T 6 to gripper). Also to note after obtaining T base to gripper a correction Rotation matrix was implemented around z and y axis to align the axis.
 
 
 ![alt text][image3]
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
-And here's another image! 
+In order to approach the Inverse Kinematics problem initailly we will start by computing the wrist center. 
+The wrist center will be calculated using roll , pitch , yaw values obtained. Using these angle R 0_6 is evaluated.
+(R 0_6 = Ryaw around zaxis* Rpitch around y axis * R roll around x axis )
+ 
+ Wrist center position is then calculated based on the following formula
+ (Wrist position = end effector position obtained from ROS - R 0_6 * end effector length where end effector length is equal to 0.303) 
 
 ![alt text][image4]
 ![alt text][image5]
 ![alt text][image6]
+
+
 ### Project Implementation
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
