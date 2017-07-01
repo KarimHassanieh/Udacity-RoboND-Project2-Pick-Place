@@ -49,11 +49,11 @@ Moreover this was the basis of evaluating the kinematic frames and there distrib
 link | alpha j-1 | a i-1 | d i-1 | Theta i
 --- | --- | --- | --- | ---
 1 | 0 | 0 | 0.75 | Theta 1
-2 | -pi | 0.35 | 0| Theta 2
+2 | -pi/2 | 0.35 | 0| Theta 2
 3 | 0 | 1.25 | 0 | Theta 3
-4 | -pi | -0.054 | 1.5 | Theta 4 
-5 | pi | 3 | 0 | Theta 5
-6 | -pi| 3 | 0 | Theta 6
+4 | -pi/2 | -0.054 | 1.5 | Theta 4 
+5 | pi/2 | 3 | 0 | Theta 5
+6 | -pi/2| 3 | 0 | Theta 6
 7 | 0 | 3 | 0.303 | 0
 
 The homogenous transformation was then calculated by inserting the below formula (refernced from Part 13 of the Udacity -Pick and Place Project section) to have transfomation from i-1 to i , in order to obtain the overall transform between the base_link and gripper_link the consecutive transformation matrices were multiplied (T base to gripper = Tbase to 1 * T 1 to 2 * T 2 to 3 * T3 to 4 * T5 to 6 * T 6 to gripper). Also to note after obtaining T base to gripper a correction Rotation matrix was implemented around z and y axis to align the axis.The final transformation matrix are part of the code presented in the IK_server.py code.
