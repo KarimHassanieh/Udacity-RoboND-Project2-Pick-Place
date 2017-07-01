@@ -18,7 +18,7 @@
 
 [image1]: ./Results/kuka_arm_frame.png
 [image2]: ./Results/demo.png
-[image3]: ./Results/misc3.png
+[image3]: ./Results/matrix.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -51,6 +51,10 @@ link | alpha j-1 | a i-1 | d i-1 | Theta i
 5 | pi | 3 | 0 | Theta 5
 6 | -pi| 3 | 0 | Theta 6
 7 | 0 | 3 | 0.303 | 0
+
+The homogenous transformation was then calculated by inserting the below formula to have transfomation from i-1 to i , in order to obtain the overall transform between the base_link and gripper_link the consecutive transformation matrices were multiplied (T base to gripper = Tbase to 1 * T 1 to 2 * T 2 to 3 * T3 to 4 * T5 to 6 * T 6 to gripper)
+![alt text][image2]
+
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
 And here's another image! 
